@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block head %}
+{% block title %}<title>NG Blog</title>
+{% endblock %}
+<meta name="description" content="{{ desc }}"/>
+<meta name="keywords" content="{{ key }}"/>
+{% endblock %}
+
+{% block body %}
+    <img class="top-image" src=\media\baner_blog2.jpg>
+  {% for obj in posts %}
+    <a href="{{ obj.get_absolute_url }}"><b>{{ obj.title }}</b></a>
+    <img src="{{ obj.image.url }}" alt="">
+    <p>{{ obj.text_min|truncatechars:250 }}</p>
+    <button onclick="showText(this)">Read more...</button>
+    <p>{{ post.text|linebreaksbr }}</p>
+    <br><br><br>
+    {% empty %}
+  <b>Статьи не найдены</b>
+    {% endfor %}
+  {% if posts.has_previous %}
+  <a href="?page={{ posts.previous_page_number }}">Назад</a>
+  {% endif %}
+  <span>{{ posts.number }} / {{ posts.num_pages }}</span>
+  {% if posts.has_next %}
+  <a href="?page={{ posts.next_page_number }}" >Вперед</a>
+  {% endif %}
+{% endblock %}
