@@ -8,8 +8,11 @@
 {% block body %}
   {% if post.visible %}
     <h1>{{ post.title }}</h1>
-   	<img src="{{ post.image.url }}" alt="">
-  	<p>{{ post.content }}</p>
+    <p>Date: {{ post.created }}</p>
+    <p>Author: {{ post.user }}</p>
+    <p>Category: {{ post.category }}</p>
+   	<img class="post_img" src="{{ post.image.url }}" alt="">
+  	<p>{{ post.text }}</p>
     <hr>
     <a class="btn btn-default" href="{% url 'add_comment' id=post.pk %}">Add comment</a>
     {% for comment in post.comments.all %}
