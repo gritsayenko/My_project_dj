@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %}NG Blog| Register
+{% endblock %}
+
+{% block body %}
+
+    <h1>Registration</h1>
+    <p>Please, use the following form to register:</p>
+    <form action="" method="post">
+        {% csrf_token %}
+            {% for field in form%}
+                <div class="form-group">
+                    {% if field.errors %}
+                        <div class="alert alert-danger">
+                            {{ field.errors }}
+                        </div>
+                    {% endif %}
+                    {{ field.label }}
+                    {{ field }}
+                </div>
+            {% endfor %}
+        <input type="submit" class="btn register" value="Register">
+    </form>
+
+{% endblock %}
