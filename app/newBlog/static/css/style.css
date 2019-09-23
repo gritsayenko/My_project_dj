@@ -22,6 +22,7 @@ h1 a {
 
 .top-image{
     width:100%;
+    margin-top: -21px;
 }
 
 
@@ -82,15 +83,26 @@ ul li {
 	background-color: #FCA205;
 	color: white;
 }
-.button-signin, .button-signup{
+.button-signin, .button-signup, .button-create{
     padding: 5px 15px;
     border: 1px solid #dbdbdb;
     border-radius: 5px;
     background-color: #eeeeee;
 }
- .page-navigation a.button-signin, .page-navigation a.button-signup{
+ .page-navigation a.button-signin, .page-navigation a.button-signup, .page-navigation a.button-create{
     color: #ff9400;
     font-size:16px;
+}
+.box-header {
+    margin: 0 0 30px;
+    text-align: center;
+}
+.box-header h2{
+    font-size: 22px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align:center;
 }
 form {
     margin: 0 auto;
@@ -211,24 +223,53 @@ input:focus, textarea:focus {
   font-size: 16pt;
   transition:background .4s;
   cursor:pointer;
-
-.page-navigation a {
-	display: block;
-	color: #949494;
-	line-height: 4em;
-	font-weight: bold;
-	text-align: center;
 }
-.page-navigation li a:hover {
-	color:yellowgreen;
-	background-color: black;
+.box-content{
+    text-align:center;
+    width:60%;
+    margin: 0 auto;
+}
+/*BLOG*/
+.layout-gallery-sign-wrapper {
+    margin: 15px 0;
+    display:flex;
+    justify-content: space-between;
+}
+
+.layout-gallery-sign-wrapper div {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px 10px;
+    width:350px;
+}
+
+.layout-gallery-sign-wrapper a {
+    text-decoration: none;
+    color: #000;
+}
+
+.layout-gallery-sign-wrapper img {
+    max-width: 350px;
+    margin-bottom:20px;
+}
+
+.layout-gallery-sign-wrapper p {
+    margin: 15px 0;
+    text-align: justify;
+    text-indent: 0;
+}
+/*BLOG INSIDE*/
+.post_img{
+    float:left;
+    margin-right:25px;
+    width:30%;
 }
 
 /*FOOTER*/
 .footer {
-	background-color: #A9A9A9;
+	background-color: #ff9400;
 	color: white;
-	padding: 20px 0;
+	padding: 20px;
 	margin-top: 30px;
 	clear: both;
 }

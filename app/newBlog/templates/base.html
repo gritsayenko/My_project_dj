@@ -29,10 +29,11 @@
                 <li><a href="#">Contacts</a></li>
              </ul>
              {% if request.user.is_authenticated%}
-                <a href="{% url 'post_create' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+                <a href="{% url 'post_create' %}" class="top-menu button-create">Publish your post</a>
              {% else %}
     <!-- LOGIN REGISTER BUTTONS-->
                 <ul>
+                    <li><a href="{% url 'post_create' %}" class="top-menu button-create">Publish your post</a></li>
                     <li><a href="{% url 'login' %}" class="top-menu button-signin">Sign in</a>
                     <li><a href="{% url 'register' %}" class="top-menu button-signup">Sign up</a>
                 </ul>
@@ -47,14 +48,12 @@
   {% block body %}
 
   {% endblock %}
-
+   </div>
 <!-- FOOTER-->
   <footer class="footer">
-     <div class="container">
         <p>Copyright @ Example.com 2019</p>
-     </div>
   </footer>
 <!-- /FOOTER-->
-   </div>
+
 </body>
 </html>

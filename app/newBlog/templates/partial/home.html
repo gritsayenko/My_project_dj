@@ -9,15 +9,35 @@
 {% block body %}
     <img class="top-image" src=\media\baner_blog2.jpg>
   {% for obj in posts %}
-    <a href="{{ obj.get_absolute_url }}"><b>{{ obj.title }}</b></a>
-    <img src="{{ obj.image.url }}" alt="">
-    <p>{{ obj.text_min|truncatechars:250 }}</p>
-    <button onclick="showText(this)">Read more...</button>
-    <p>{{ post.text|linebreaksbr }}</p>
-    <br><br><br>
-    {% empty %}
+      <div class="box-header">
+          <h1>Wellcome to blog</h1>
+      </div>
+      <div class="box-content">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+      </div>
+      <div class="layout-gallery-sign-wrapper">
+        <div>
+            <img src="{{ obj.image.url }}" alt="">
+            <a href="{{ obj.get_absolute_url }}"><b>{{ obj.title }}</b></a>
+            <p>{{ obj.text_min|truncatechars:250 }}</p>
+            <button onclick="showText(this)">Read more...</button>
+        </div>
+        <div>
+            <img src="{{ obj.image.url }}" alt="">
+            <a href="{{ obj.get_absolute_url }}"><b>{{ obj.title }}</b></a>
+            <p>{{ obj.text_min|truncatechars:250 }}</p>
+            <button onclick="showText(this)">Read more...</button>
+        </div>
+        <div>
+            <img src="{{ obj.image.url }}" alt="">
+            <a href="{{ obj.get_absolute_url }}"><b>{{ obj.title }}</b></a>
+            <p>{{ obj.text_min|truncatechars:250 }}</p>
+            <button onclick="showText(this)">Read more...</button>
+        </div>
+      </div>
+  {% empty %}
   <b>Статьи не найдены</b>
-    {% endfor %}
+  {% endfor %}
   {% if posts.has_previous %}
   <a href="?page={{ posts.previous_page_number }}">Назад</a>
   {% endif %}
