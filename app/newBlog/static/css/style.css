@@ -79,7 +79,19 @@ ul li {
 .page-navigation ul li a{
     color:#fff;
 }
-.btn register:hover,button:hover {
+ .register.btn, .login.btn {
+	background-color: #ff9409;
+	color: white;
+	border-radius: 5px;
+	margin-bottom:20px;
+}
+
+.btn-success.btn, .btn-default.btn {
+	margin-bottom:20px;
+}
+
+}
+.btn register:hover,button:hover, .btn login:hover,button:hover {
 	background-color: #FCA205;
 	color: white;
 }
@@ -105,7 +117,7 @@ ul li {
     text-align:center;
 }
 form {
-    margin: 0 auto;
+    margin: 50px auto;
     max-width: 50%;
     padding: 30px 30px 6px 30px;
     border: 1px solid rgba(0,0,0,.2);
@@ -234,13 +246,14 @@ input:focus, textarea:focus {
     margin: 15px 0;
     display:flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .layout-gallery-sign-wrapper div {
     display: inline-block;
     vertical-align: top;
-    margin: 0 10px 10px;
-    width:350px;
+    margin: 20px 10px 10px;
+    width: 330px;
 }
 
 .layout-gallery-sign-wrapper a {
