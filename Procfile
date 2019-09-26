@@ -1,1 +1,1 @@
-web: python -m supervisor
+web: gunicorn newBlog:app --log-file -
