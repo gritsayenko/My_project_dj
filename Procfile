@@ -1,1 +1,1 @@
-web: gunicorn newBlog.wsgi --log-file--
+web: python -m supervisor
