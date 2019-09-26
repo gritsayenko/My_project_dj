@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cccdeae9-e7bd-45dc-b3d5-08cc8d283543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/media/Blog_HFX31uq.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/media/baner2_A44dhTr.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/media/baner_7hhSR3q.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/media/baner_blog_psfqzSl.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/media/image_robot_56y4PBa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/media/mitbdatech-reviewarticle_IVm4P2p.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/media/photo_technology_FOwlCDv.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/newBlog/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/newBlog/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/newBlog/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/newBlog/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/newBlog/templates/account/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/newBlog/templates/account/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/newBlog/templates/partial/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/newBlog/templates/partial/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/newBlog/templates/partial/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/newBlog/templates/partial/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/runtime.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/runtime.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
