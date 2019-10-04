@@ -1,0 +1,14 @@
+{
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.5"
+      }
+    }
+  ],
+  "description": "Just blog implementation",
+  "name": "My Blog",
+  "keywords": ["python", "django"],
+  "repository": "https://github.com/gritsayenko/My_project_dj"
+}
