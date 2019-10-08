@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% block head %}
+{% block title %}<title>NG Blog</title>
+{% endblock %}
+<meta name="description" content="{{ desc }}"/>
+<meta name="keywords" content="{{ key }}"/>
+{% endblock %}
+
+{% block body %}
+<img class="top-image" src=\media\baner_blog2.jpg>
+
+    <div class="box-header">
+        <h1>Wellcome to blog</h1>
+    </div>
+    <div class="box-content">
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+    </div>
+    <div class="layout-gallery-sign-wrapper">
+    {% for obj in posts %}
+        <div>
+            <img src="{{ obj.image.url }}" alt="">
+            <a href="{{ obj.get_absolute_url }}"><b>{{ obj.title }}</b></a>
+            <p>{{ obj.text_min|truncatechars:250 }}</p>
+            <button onclick="window.location.href='{{ obj.get_absolute_url }}'">Read more...</button>
+        </div>
+
+  {% empty %}
+  <b>Статьи не найдены</b>
+  {% endfor %}
+   </div>
+  {% if posts.has_previous %}
+  <a href="?page={{ posts.previous_page_number }}">Prev</a>
+  {% endif %}
+  <!--<span>{{ posts.number }} / {{ posts.num_pages }}</span>-->
+  {% if posts.has_next %}
+  <a href="?page={{ posts.next_page_number }}" >Next</a>
+  {% endif %}
+{% endblock %}
